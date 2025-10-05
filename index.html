@@ -18,18 +18,26 @@
 		}
 	</script>
 
-	<!-- Minimal baseline styles to ensure layout looks reasonable even without custom build -->
+	<!-- Minimal baseline styles: neutral/classy black & white palette -->
 	<style>
-		body { background-color: #f6f4f0; }
-		.card { background: #fff; border: 1px solid rgba(0,0,0,0.1); border-radius: 0.75rem; padding: 1.25rem; }
-		[data-card] { transition: box-shadow .2s ease, transform .2s ease; }
-		[data-card]:hover { box-shadow: 0 8px 24px rgba(0,0,0,0.08); transform: translateY(-2px); }
+		:root {
+			--surface: #ffffff;
+			--bg: #ffffff;
+			--text: #111111;
+			--muted: #6b7280; /* gray-500 */
+			--border: rgba(0,0,0,0.12);
+			--shadow: 0 10px 30px rgba(0,0,0,0.08);
+		}
+		body { background-color: var(--bg); color: var(--text); }
+		.card { background: var(--surface); border: 1px solid var(--border); border-radius: 0.75rem; padding: 1.25rem; }
+		[data-card] { transition: box-shadow .25s ease, transform .25s ease; }
+		[data-card]:hover { box-shadow: var(--shadow); transform: translateY(-1.5px); }
 	</style>
 	</head>
 <body class="text-gray-900 antialiased">
-		<header class="bg-white/60 backdrop-blur border-b border-black/10">
+		<header class="bg-white/70 backdrop-blur border-b border-black/10">
 			<div class="max-w-5xl mx-auto px-4 h-14 flex items-center justify-between">
-				<a href="index.html" class="font-medium">Mohamad Ali Soueidan</a>
+				<a href="index.html" class="font-medium">Home</a>
 				<!-- Desktop nav -->
 								<nav class="text-sm hidden md:flex items-center gap-5">
 									<a class="hover:underline inline-flex items-center gap-1.5" href="projects.html">
@@ -166,7 +174,7 @@
 		</main>
 
 	<!-- Footer -->
-	<footer class="border-t border-black/10">
+	<footer class="border-t border-black/10 bg-white/60 backdrop-blur">
 		<div class="max-w-5xl mx-auto px-4 py-6 text-sm flex flex-wrap items-center justify-between gap-3">
 			<p>© <span id="year"></span> Mohamad Ali Soueidan</p>
 						<div class="flex gap-4">
