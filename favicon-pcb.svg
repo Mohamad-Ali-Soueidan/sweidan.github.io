@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <rect width="128" height="128" rx="20" fill="#ffffff"/>
+  <rect x="16" y="16" width="96" height="96" rx="12" fill="#0f172a"/>
+  <!-- simplified PCB traces -->
+  <rect x="28" y="28" width="6" height="72" rx="3" fill="#10b981"/>
+  <rect x="60" y="28" width="6" height="72" rx="3" fill="#10b981"/>
+  <rect x="92" y="28" width="6" height="72" rx="3" fill="#10b981"/>
+  <circle cx="31" cy="38" r="5" fill="#f8fafc"/>
+  <circle cx="63" cy="62" r="5" fill="#f8fafc"/>
+  <circle cx="95" cy="86" r="5" fill="#f8fafc"/>
+  <path d="M34 44 L60 56" stroke="#10b981" stroke-width="4" stroke-linecap="round"/>
+  <path d="M66 68 L92 80" stroke="#10b981" stroke-width="4" stroke-linecap="round"/>
+</svg>
