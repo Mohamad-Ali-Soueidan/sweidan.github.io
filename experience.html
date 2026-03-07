@@ -1,146 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Experience • Mohamad Ali Soueidan</title>
-  <meta name="description" content="Work experience of Mohamad Ali Soueidan" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = { theme: { extend: { colors: { beige: '#f6f4f0' } } } }
-  </script>
-  <link rel="canonical" href="https://sweidan.dev/experience.html" />
-  <style>
-    :root {
-      --surface: #ffffff;
-      --bg: #ffffff;
-      --text: #111111;
-      --muted: #6b7280;
-      --border: rgba(0,0,0,0.12);
-      --shadow: 0 10px 30px rgba(0,0,0,0.08);
-    }
-    body { background-color: var(--bg); color: var(--text); }
-    .card { background: var(--surface); border: 1px solid var(--border); border-radius: .75rem; }
-    [data-card] { transition: box-shadow .25s ease, transform .25s ease; }
-    [data-card]:hover { box-shadow: var(--shadow); transform: translateY(-1.5px); }
-  </style>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Experience — Mohamad Ali Soueidan</title>
+	<meta name="description" content="Work experience of Mohamad Ali Soueidan — Embedded Software Engineer at General Motors." />
+	<meta name="color-scheme" content="dark light" />
+	<link rel="canonical" href="https://sweidan.dev/experience.html" />
+
+	<link rel="icon" href="/favicon-32.png" sizes="32x32" />
+	<link rel="icon" href="/favicon-16.png" sizes="16x16" />
+	<link rel="icon" href="/favicon-pcb.svg" type="image/svg+xml">
+	<meta name="robots" content="index, follow" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="text-gray-900 antialiased">
-  <header class="bg-white/70 backdrop-blur border-b border-black/10">
-    <div class="max-w-5xl mx-auto px-4 h-14 flex items-center justify-between">
-  <a href="index.html" class="font-medium">Home</a>
-      <!-- Desktop nav -->
-      <nav class="text-sm hidden md:flex items-center gap-5">
-        <a class="hover:underline inline-flex items-center gap-1.5" href="projects.html">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="h-4 w-4" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25H11.69Z" /></svg>
-          <span>Projects</span>
-        </a>
-        <a class="hover:underline inline-flex items-center gap-1.5" href="experience.html">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="h-4 w-4" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0M12 12.75h.008v.008H12v-.008Z" /></svg>
-          <span>Experience</span>
-        </a>
-  <a class="hover:underline inline-flex items-center gap-1.5" href="resume.pdf" target="_blank" rel="noopener">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="h-4 w-4" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 7.5h6M9 10.5h6M9 13.5h3"/><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 4.5h7.5A2.25 2.25 0 0117.25 6.75v10.5A2.25 2.25 0 0115 19.5H9.75A2.25 2.25 0 017.5 17.25V4.5z"/></svg>
-          <span>Resume</span>
-        </a>
-        <a class="hover:underline inline-flex items-center gap-1.5" href="https://github.com/Mohamad-Ali-Soueidan" target="_blank" rel="noopener">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="h-4 w-4" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" /></svg>
-          <span>GitHub</span>
-        </a>
-      </nav>
-      <!-- Mobile toggle -->
-      <button id="navToggle" class="md:hidden inline-flex items-center justify-center p-2 rounded border border-black/10" aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-        </svg>
-      </button>
-    </div>
-    <!-- Mobile menu -->
-    <div id="mobileMenu" class="md:hidden hidden border-t border-black/10">
-      <div class="max-w-5xl mx-auto px-4 py-3 flex flex-col gap-3 text-sm">
-        <a class="hover:underline inline-flex items-center gap-1.5" href="projects.html">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="h-4 w-4" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25H11.69Z" /></svg>
-          <span>Projects</span>
-        </a>
-        <a class="hover:underline inline-flex items-center gap-1.5" href="experience.html">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="h-4 w-4" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0M12 12.75h.008v.008H12v-.008Z" /></svg>
-          <span>Experience</span>
-        </a>
-  <a class="hover:underline inline-flex items-center gap-1.5" href="resume.pdf" target="_blank" rel="noopener">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="h-4 w-4" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 7.5h6M9 10.5h6M9 13.5h3"/><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 4.5h7.5A2.25 2.25 0 0117.25 6.75v10.5A2.25 2.25 0 0115 19.5H9.75A2.25 2.25 0 017.5 17.25V4.5z"/></svg>
-          <span>Resume</span>
-        </a>
-        <a class="hover:underline inline-flex items-center gap-1.5" href="https://github.com/Mohamad-Ali-Soueidan" target="_blank" rel="noopener">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="h-4 w-4" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" /></svg>
-          <span>GitHub</span>
-        </a>
-      </div>
-    </div>
-  </header>
+<body>
+	<header class="site-header">
+		<div class="max-w-3xl mx-auto px-4 h-12 flex items-center justify-between">
+			<a href="index.html" class="nav-link">~/home</a>
+			<nav class="hidden md:flex items-center gap-6">
+				<a class="nav-link" href="experience.html">experience</a>
+				<a class="nav-link" href="projects.html">projects</a>
+				<a class="nav-link" href="coursework.html">coursework</a>
+				<a class="nav-link" href="resume.pdf" target="_blank" rel="noopener">resume</a>
+				<a class="nav-link" href="https://github.com/Mohamad-Ali-Soueidan" target="_blank" rel="noopener">github</a>
+				<button class="theme-toggle theme-toggle-btn" aria-label="Toggle theme">[light]</button>
+			</nav>
+			<div class="md:hidden flex items-center gap-3">
+				<button class="theme-toggle theme-toggle-btn" aria-label="Toggle theme">[light]</button>
+				<button id="navToggle" class="theme-toggle" aria-label="Toggle navigation">[menu]</button>
+			</div>
+		</div>
+		<div id="mobileMenu" class="md:hidden hidden" style="border-top: 1px solid var(--border);">
+			<div class="max-w-3xl mx-auto px-4 py-3 flex flex-col gap-2">
+				<a class="nav-link" href="experience.html">experience</a>
+				<a class="nav-link" href="projects.html">projects</a>
+				<a class="nav-link" href="coursework.html">coursework</a>
+				<a class="nav-link" href="resume.pdf" target="_blank" rel="noopener">resume</a>
+				<a class="nav-link" href="https://github.com/Mohamad-Ali-Soueidan" target="_blank" rel="noopener">github</a>
+			</div>
+		</div>
+	</header>
 
-  <main class="max-w-5xl mx-auto px-4 py-10">
-    <h1 class="text-3xl font-semibold">Experience</h1>
-    <p class="mt-2 text-gray-700">Brief highlights of recent roles.</p>
+	<main class="max-w-3xl mx-auto px-4 py-12">
+		<h1 class="text-3xl prompt">experience</h1>
+		<p class="mt-2 muted">Professional roles and research positions.</p>
 
-    <div class="mt-8 grid gap-6">
-      <section id="tulipmmd" class="card p-5" data-card>
-        <h2 class="text-xl font-semibold">Applications and Hardware Engineer • TulipMMD (Ojeda Lab)</h2>
-        <p class="mt-1 text-xs text-gray-500">Ann Arbor, MI • Jul 2025 – Present</p>
-        <ul class="list-disc pl-5 mt-2 text-sm text-gray-700 space-y-1">
-          <li>Built a step tracking module for a Parkinson’s rehab device; delivered for demo day.</li>
-          <li>Designed 4-layer PCBs in KiCad; validated bring-up; cut iteration time ~30%.</li>
-          <li>Authored technical docs and grant reports for nontechnical reviewers.</li>
-          <li>Translated clinician needs into requirements; aligned product scope and pilot goals.</li>
-        </ul>
-      </section>
+		<div class="mt-8 grid gap-6">
+			<!-- General Motors -->
+			<section id="gm" class="card p-5">
+				<h2 class="text-xl accent">Embedded Software Engineer — General Motors</h2>
+				<p class="mt-1 muted text-sm">Full-time · Jan 2026 – Present · Warren, MI · On-site</p>
+				<p class="mt-3" style="color: var(--text);">Member of the Secure Vehicle Access team within GM's embedded software division. Working on firmware and software systems that govern secure entry, authentication, and access control for next-generation vehicles.</p>
+				<ul class="exp-list mt-3 text-sm">
+					<li>Developing embedded software for secure vehicle access and authentication systems</li>
+					<li>Working with real-time firmware on automotive-grade microcontrollers</li>
+					<li>Contributing to secure communication protocols for vehicle entry systems</li>
+				</ul>
+			</section>
 
-      <section id="ojeda-lab" class="card p-5" data-card>
-        <h2 class="text-xl font-semibold">Research Assistant • Ojeda Research Lab – University of Michigan</h2>
-        <p class="mt-1 text-xs text-gray-500">Ann Arbor, MI • May 2025 – Present</p>
-        <ul class="list-disc pl-5 mt-2 text-sm text-gray-700 space-y-1">
-          <li>Programmed Arduino-based sensor nodes (C/Python) for SPI, I2C, UART; improved link reliability.</li>
-          <li>Built MATLAB scripts to align multi-sensor data; reduced analysis time ~40%.</li>
-          <li>Wrote validation plans and test logs for clean cross-functional handoff.</li>
-          <li>Presented findings and system-level recommendations to mixed audiences.</li>
-        </ul>
-      </section>
+			<!-- UMich Research -->
+			<section id="umich-research" class="card p-5">
+				<h2 class="text-xl accent">Research Assistant — University of Michigan</h2>
+				<p class="mt-1 muted text-sm">Mechanical Engineering Department · Full-time · May 2025 – Aug 2025 · Ann Arbor, MI</p>
+				<p class="mt-3" style="color: var(--text);">Embedded hardware and firmware engineering for a Parkinson's disease rehabilitation device. Developed sensor systems and data processing pipelines to support clinical research in motor function recovery.</p>
+				<ul class="exp-list mt-3 text-sm">
+					<li>Programmed microcontroller-based sensor nodes in C/C++ with SPI, I2C, and UART communication</li>
+					<li>Built data alignment and processing scripts in MATLAB, reducing analysis time by approximately 40%</li>
+					<li>Wrote validation plans and test documentation for cross-functional handoff to clinical teams</li>
+					<li>Presented system-level findings and technical recommendations to mixed audiences</li>
+				</ul>
+				<div class="mt-3 flex flex-wrap gap-2">
+					<span class="tag">C++</span>
+					<span class="tag">C</span>
+					<span class="tag">MATLAB</span>
+					<span class="tag">SPI/I2C/UART</span>
+					<span class="tag">Arduino</span>
+				</div>
+			</section>
 
-      <section id="montypay" class="card p-5" data-card>
-        <h2 class="text-xl font-semibold">Product Management Intern • MontyPay</h2>
-        <p class="mt-1 text-xs text-gray-500">Beirut, Lebanon • Jun 2024 – Aug 2024</p>
-        <ul class="list-disc pl-5 mt-2 text-sm text-gray-700 space-y-1">
-          <li>Led cross-department work on a lead disqualification analyzer; raised sales efficiency ~25%.</li>
-          <li>Built Excel/Python BI dashboards; improved weekly pipeline reviews.</li>
-          <li>Produced customer-facing decks clarifying value and next steps for faster deal movement.</li>
-        </ul>
-      </section>
-    </div>
-  </main>
+			<!-- MITES -->
+			<section id="mites" class="card p-5">
+				<h2 class="text-xl accent">MITES Scholar — MIT ITES</h2>
+				<p class="mt-1 muted text-sm">Jun 2021 – Dec 2021 · Cambridge, MA · Hybrid</p>
+				<p class="mt-3" style="color: var(--text);">Selected for MIT Introduction to Technology, Engineering, and Science (MITES), a rigorous STEM enrichment program. Completed coursework in engineering design, data visualization, and computer-aided design while collaborating with peers on technical projects.</p>
+				<ul class="exp-list mt-3 text-sm">
+					<li>Completed intensive coursework in engineering fundamentals and computational methods</li>
+					<li>Built projects involving data visualization and CAD modeling</li>
+					<li>Collaborated with a cohort of students on design challenges and technical presentations</li>
+				</ul>
+				<div class="mt-3 flex flex-wrap gap-2">
+					<span class="tag">Data Visualization</span>
+					<span class="tag">CAD</span>
+					<span class="tag">Engineering Design</span>
+				</div>
+			</section>
+		</div>
 
-  <footer class="border-t border-black/10 bg-white/60 backdrop-blur">
-    <div class="max-w-5xl mx-auto px-4 py-6 text-sm flex flex-wrap items-center justify-between gap-3">
-      <p>© <span id="year"></span> Mohamad Ali Soueidan</p>
-      <div class="flex gap-4">
-        <a href="https://www.linkedin.com/in/" class="underline inline-flex items-center gap-1.5">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="h-4 w-4" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H18m0 0v4.5M18 6l-7.5 7.5"/><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 8.25v7.5a1.5 1.5 0 001.5 1.5h7.5"/></svg>
-          <span>LinkedIn</span>
-        </a>
-        <a href="https://github.com/Mohamad-Ali-Soueidan" class="underline inline-flex items-center gap-1.5">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="h-4 w-4" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" /></svg>
-          <span>GitHub</span>
-        </a>
-      </div>
-    </div>
-  </footer>
+		<!-- Education -->
+		<section class="mt-14">
+			<h2 class="text-2xl prompt">education</h2>
+			<div class="mt-6 card p-5">
+				<h3 class="text-xl accent">University of Michigan College of Engineering</h3>
+				<p class="mt-1 muted text-sm">Bachelor of Science in Engineering — Computer Engineering · Aug 2022 – Dec 2025</p>
+				<p class="mt-3" style="color: var(--text);">Concentrated coursework in embedded systems, computer architecture, computer vision, and signal processing. Completed hands-on projects in firmware development, PCB design, and precision agriculture.</p>
+				<div class="mt-3">
+					<a href="coursework.html" class="accent text-sm">-> view coursework</a>
+				</div>
+			</div>
+		</section>
+	</main>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    const navToggle = document.getElementById('navToggle');
-    const mobileMenu = document.getElementById('mobileMenu');
-    navToggle?.addEventListener('click', () => {
-      const isHidden = mobileMenu?.classList.toggle('hidden');
-      if (navToggle) navToggle.setAttribute('aria-expanded', String(!isHidden));
-    });
-  </script>
+	<footer class="site-footer">
+		<div class="max-w-3xl mx-auto px-4 py-6 flex flex-wrap items-center justify-between gap-3 muted text-sm">
+			<p>&copy; <span id="year"></span> Mohamad Ali Soueidan</p>
+			<div class="flex gap-4">
+				<a href="https://www.linkedin.com/in/mohamad-ali-soueidan" class="nav-link">linkedin</a>
+				<a href="https://github.com/Mohamad-Ali-Soueidan" class="nav-link">github</a>
+			</div>
+		</div>
+	</footer>
+
+	<script src="main.js"></script>
 </body>
 </html>

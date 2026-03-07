@@ -1,0 +1,177 @@
+/* Terminal Theme — sweidan.dev */
+
+/* Dark mode (default) */
+:root {
+    --bg: #0d1117;
+    --surface: #161b22;
+    --text: #c9d1d9;
+    --accent: #00ff41;
+    --muted: #8b949e;
+    --border: rgba(0, 255, 65, 0.15);
+    --glow: rgba(0, 255, 65, 0.1);
+}
+
+/* Light mode */
+.light {
+    --bg: #f8f9fa;
+    --surface: #ffffff;
+    --text: #24292e;
+    --accent: #0a6b31;
+    --muted: #586069;
+    --border: rgba(10, 107, 49, 0.2);
+    --glow: rgba(10, 107, 49, 0.05);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'VT323', monospace;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Subtle scanline overlay */
+body::after {
+    content: '';
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    pointer-events: none;
+    background: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 2px,
+        rgba(0, 0, 0, 0.025) 2px,
+        rgba(0, 0, 0, 0.025) 4px
+    );
+    z-index: 9999;
+}
+
+/* Blinking cursor */
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+.cursor {
+    display: inline-block;
+    width: 0.55em;
+    height: 1.1em;
+    background-color: var(--accent);
+    animation: blink 1s step-end infinite;
+    vertical-align: text-bottom;
+    margin-left: 2px;
+}
+
+/* Colors */
+.accent { color: var(--accent); }
+.muted { color: var(--muted); }
+
+/* Card */
+.card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    transition: border-color .2s ease, box-shadow .2s ease;
+}
+.card:hover {
+    border-color: var(--accent);
+    box-shadow: 0 0 20px var(--glow);
+}
+
+/* Links */
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Section prompt */
+.prompt::before {
+    content: '$ ';
+    color: var(--accent);
+}
+
+/* Tags */
+.tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    font-size: 0.9rem;
+    color: var(--accent);
+}
+
+/* Header */
+.site-header {
+    background-color: var(--surface);
+    border-bottom: 1px solid var(--border);
+}
+
+/* Nav */
+.nav-link {
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.nav-link:hover {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+/* Theme toggle button */
+.theme-toggle {
+    background: none;
+    border: 1px solid var(--border);
+    color: var(--accent);
+    padding: 2px 8px;
+    border-radius: 2px;
+    cursor: pointer;
+    font-family: 'VT323', monospace;
+    font-size: 1rem;
+}
+.theme-toggle:hover {
+    border-color: var(--accent);
+}
+
+/* Footer */
+.site-footer {
+    border-top: 1px solid var(--border);
+}
+
+/* Experience list with > markers */
+.exp-list {
+    list-style: none;
+    padding-left: 0;
+}
+.exp-list li {
+    padding-left: 1.25rem;
+    position: relative;
+    color: var(--muted);
+    margin-bottom: 0.25rem;
+}
+.exp-list li::before {
+    content: '>';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+}
+
+/* Course grid item */
+.course-item {
+    padding: 1rem 1.25rem;
+}
+.course-code {
+    color: var(--accent);
+    font-size: 0.9rem;
+}
+.course-name {
+    color: var(--text);
+}
+.course-desc {
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+    body { font-size: 1rem; }
+}

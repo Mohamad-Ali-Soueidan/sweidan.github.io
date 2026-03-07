@@ -16,6 +16,11 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>https://sweidan.dev/coursework.html</loc>
+    <priority>0.6</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
     <loc>https://sweidan.dev/resume.pdf</loc>
     <priority>0.4</priority>
     <changefreq>yearly</changefreq>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Coursework — Mohamad Ali Soueidan</title>
+	<meta name="description" content="Highlighted coursework in embedded systems, computer architecture, vision, and signal processing at the University of Michigan." />
+	<meta name="color-scheme" content="dark light" />
+	<link rel="canonical" href="https://sweidan.dev/coursework.html" />
+
+	<link rel="icon" href="/favicon-32.png" sizes="32x32" />
+	<link rel="icon" href="/favicon-16.png" sizes="16x16" />
+	<link rel="icon" href="/favicon-pcb.svg" type="image/svg+xml">
+	<meta name="robots" content="index, follow" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+	<header class="site-header">
+		<div class="max-w-3xl mx-auto px-4 h-12 flex items-center justify-between">
+			<a href="index.html" class="nav-link">~/home</a>
+			<nav class="hidden md:flex items-center gap-6">
+				<a class="nav-link" href="experience.html">experience</a>
+				<a class="nav-link" href="projects.html">projects</a>
+				<a class="nav-link" href="coursework.html">coursework</a>
+				<a class="nav-link" href="resume.pdf" target="_blank" rel="noopener">resume</a>
+				<a class="nav-link" href="https://github.com/Mohamad-Ali-Soueidan" target="_blank" rel="noopener">github</a>
+				<button class="theme-toggle theme-toggle-btn" aria-label="Toggle theme">[light]</button>
+			</nav>
+			<div class="md:hidden flex items-center gap-3">
+				<button class="theme-toggle theme-toggle-btn" aria-label="Toggle theme">[light]</button>
+				<button id="navToggle" class="theme-toggle" aria-label="Toggle navigation">[menu]</button>
+			</div>
+		</div>
+		<div id="mobileMenu" class="md:hidden hidden" style="border-top: 1px solid var(--border);">
+			<div class="max-w-3xl mx-auto px-4 py-3 flex flex-col gap-2">
+				<a class="nav-link" href="experience.html">experience</a>
+				<a class="nav-link" href="projects.html">projects</a>
+				<a class="nav-link" href="coursework.html">coursework</a>
+				<a class="nav-link" href="resume.pdf" target="_blank" rel="noopener">resume</a>
+				<a class="nav-link" href="https://github.com/Mohamad-Ali-Soueidan" target="_blank" rel="noopener">github</a>
+			</div>
+		</div>
+	</header>
+
+	<main class="max-w-3xl mx-auto px-4 py-12">
+		<h1 class="text-3xl prompt">coursework</h1>
+		<p class="mt-2 muted">Highlighted courses from the University of Michigan College of Engineering.</p>
+
+		<!-- Embedded & Hardware -->
+		<section class="mt-10">
+			<h2 class="text-xl prompt">embedded & hardware</h2>
+			<div class="mt-4 grid gap-3">
+				<div class="card course-item">
+					<p class="course-code">EECS 473</p>
+					<p class="course-name">Advanced Embedded System Design</p>
+					<p class="course-desc mt-1">Full-stack embedded system development including custom PCB design, sensor and actuator interfacing, real-time scheduling, and integration testing for complex embedded platforms.</p>
+				</div>
+				<div class="card course-item">
+					<p class="course-code">EECS 373</p>
+					<p class="course-name">Embedded System Design</p>
+					<p class="course-desc mt-1">ARM Cortex-M microcontroller programming, memory-mapped I/O, interrupt handling, timers, and bare-metal firmware development with serial communication protocols.</p>
+				</div>
+				<div class="card course-item">
+					<p class="course-code">EECS 471</p>
+					<p class="course-name">Applied GPU Programming</p>
+					<p class="course-desc mt-1">Parallel computation on GPUs using CUDA. GPU architecture, memory hierarchy optimization, and parallel algorithm design for compute-intensive applications.</p>
+				</div>
+				<div class="card course-item">
+					<p class="course-code">EECS 215</p>
+					<p class="course-name">Electronic Circuits</p>
+					<p class="course-desc mt-1">Analysis and design of analog and digital circuits including diodes, transistors, operational amplifiers, and frequency response characterization.</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Systems & Software -->
+		<section class="mt-10">
+			<h2 class="text-xl prompt">systems & software</h2>
+			<div class="mt-4 grid gap-3">
+				<div class="card course-item">
+					<p class="course-code">EECS 370</p>
+					<p class="course-name">Computer Organization</p>
+					<p class="course-desc mt-1">Instruction set architecture, processor datapath and control, pipelining, cache memory, virtual memory, and assembly language programming.</p>
+				</div>
+				<div class="card course-item">
+					<p class="course-code">EECS 281</p>
+					<p class="course-name">Data Structures and Algorithms</p>
+					<p class="course-desc mt-1">Complexity analysis, trees, hash tables, graphs, sorting algorithms, dynamic programming, and greedy algorithms for efficient problem solving.</p>
+				</div>
+				<div class="card course-item">
+					<p class="course-code">EECS 388</p>
+					<p class="course-name">Computer Security</p>
+					<p class="course-desc mt-1">Principles of computer and network security, cryptographic protocols, web security, software vulnerabilities, and threat modeling.</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Signal & Vision -->
+		<section class="mt-10">
+			<h2 class="text-xl prompt">signal & vision</h2>
+			<div class="mt-4 grid gap-3">
+				<div class="card course-item">
+					<p class="course-code">EECS 442</p>
+					<p class="course-name">Computer Vision</p>
+					<p class="course-desc mt-1">Image formation, feature detection, stereo vision, object recognition, motion analysis, and deep learning approaches for visual understanding.</p>
+				</div>
+				<div class="card course-item">
+					<p class="course-code">EECS 216</p>
+					<p class="course-name">Signal Processing</p>
+					<p class="course-desc mt-1">Continuous and discrete-time signals, Fourier analysis, filtering, sampling theorem, and modulation techniques for signal analysis.</p>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="max-w-3xl mx-auto px-4 py-6 flex flex-wrap items-center justify-between gap-3 muted text-sm">
+			<p>&copy; <span id="year"></span> Mohamad Ali Soueidan</p>
+			<div class="flex gap-4">
+				<a href="https://www.linkedin.com/in/mohamad-ali-soueidan" class="nav-link">linkedin</a>
+				<a href="https://github.com/Mohamad-Ali-Soueidan" class="nav-link">github</a>
+			</div>
+		</div>
+	</footer>
+
+	<script src="main.js"></script>
+</body>
+</html>
