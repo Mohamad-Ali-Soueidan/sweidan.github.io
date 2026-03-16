@@ -57,13 +57,13 @@
 	<script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-	<header class="site-header" style="position: sticky; top: 0; z-index: 100;">
+	<header class="site-header">
 		<div class="max-w-3xl mx-auto px-4 h-12 flex items-center justify-between">
-			<a href="#top" class="nav-link">~/home</a>
+			<a href="index.html" class="nav-link">~/home</a>
 			<nav class="hidden md:flex items-center gap-6">
-				<a class="nav-link" href="#experience">experience</a>
-				<a class="nav-link" href="#projects">projects</a>
-				<a class="nav-link" href="#coursework">coursework</a>
+				<a class="nav-link" href="experience.html">experience</a>
+				<a class="nav-link" href="projects.html">projects</a>
+				<a class="nav-link" href="coursework.html">coursework</a>
 				<a class="nav-link" href="resume.pdf" target="_blank" rel="noopener">resume</a>
 				<a class="nav-link" href="https://github.com/Mohamad-Ali-Soueidan" target="_blank" rel="noopener">github</a>
 				<button class="theme-toggle theme-toggle-btn" aria-label="Toggle theme">[light]</button>
@@ -75,9 +75,9 @@
 		</div>
 		<div id="mobileMenu" class="md:hidden hidden" style="border-top: 1px solid var(--border);">
 			<div class="max-w-3xl mx-auto px-4 py-3 flex flex-col gap-2">
-				<a class="nav-link" href="#experience">experience</a>
-				<a class="nav-link" href="#projects">projects</a>
-				<a class="nav-link" href="#coursework">coursework</a>
+				<a class="nav-link" href="experience.html">experience</a>
+				<a class="nav-link" href="projects.html">projects</a>
+				<a class="nav-link" href="coursework.html">coursework</a>
 				<a class="nav-link" href="resume.pdf" target="_blank" rel="noopener">resume</a>
 				<a class="nav-link" href="https://github.com/Mohamad-Ali-Soueidan" target="_blank" rel="noopener">github</a>
 			</div>
@@ -85,9 +85,8 @@
 	</header>
 
 	<main class="max-w-3xl mx-auto px-4 py-12">
-
-		<!-- ======================== HERO ======================== -->
-		<section id="top">
+		<!-- Hero -->
+		<section>
 			<h1 class="text-3xl md:text-4xl">Mohamad Ali Soueidan</h1>
 			<p class="mt-2 accent text-lg">Embedded Software Engineer @ General Motors</p>
 			<p class="mt-1 muted">BSE Computer Engineering — University of Michigan</p>
@@ -107,194 +106,26 @@
 			</div>
 		</section>
 
-		<!-- ======================== EXPERIENCE ======================== -->
-		<section id="experience" class="mt-20">
-			<h2 class="text-2xl prompt">experience</h2>
-			<div class="mt-6 grid gap-6">
-				<!-- General Motors -->
-				<div class="card p-5">
+		<!-- Recent Experience -->
+		<section class="mt-14">
+			<h2 class="text-2xl prompt">recent experience</h2>
+			<div class="mt-6 grid gap-4">
+				<a href="experience.html#gm" class="card block p-5">
 					<h3 class="text-xl accent">Embedded Software Engineer — General Motors</h3>
-					<p class="mt-1 muted text-sm">Full-time · Jan 2026 – Present · Warren, MI · On-site</p>
-					<p class="mt-3" style="color: var(--text);">Member of the Secure Vehicle Access team within GM's embedded software division. Working on firmware and software systems that govern secure entry, authentication, and access control for next-generation vehicles.</p>
-					<ul class="exp-list mt-3 text-sm">
-						<li>Developing embedded software for secure vehicle access and authentication systems</li>
-						<li>Working with real-time firmware on automotive-grade microcontrollers</li>
-						<li>Contributing to secure communication protocols for vehicle entry systems</li>
-					</ul>
-				</div>
-
-				<!-- UMich Research -->
-				<div class="card p-5">
+					<p class="mt-1 muted text-sm">Secure Vehicle Access · Jan 2026 – Present · Warren, MI</p>
+				</a>
+				<a href="experience.html#umich-research" class="card block p-5">
 					<h3 class="text-xl accent">Research Assistant — University of Michigan</h3>
-					<p class="mt-1 muted text-sm">Mechanical Engineering Department · Full-time · May 2025 – Aug 2025 · Ann Arbor, MI</p>
-					<p class="mt-3" style="color: var(--text);">Embedded hardware and firmware engineering for a Parkinson's disease rehabilitation device. Developed sensor systems and data processing pipelines to support clinical research in motor function recovery.</p>
-					<ul class="exp-list mt-3 text-sm">
-						<li>Programmed microcontroller-based sensor nodes in C/C++ with SPI, I2C, and UART communication</li>
-						<li>Built data alignment and processing scripts in MATLAB, reducing analysis time by approximately 40%</li>
-						<li>Wrote validation plans and test documentation for cross-functional handoff to clinical teams</li>
-						<li>Presented system-level findings and technical recommendations to mixed audiences</li>
-					</ul>
-					<div class="mt-3 flex flex-wrap gap-2">
-						<span class="tag">C++</span>
-						<span class="tag">C</span>
-						<span class="tag">MATLAB</span>
-						<span class="tag">SPI/I2C/UART</span>
-						<span class="tag">Arduino</span>
-					</div>
-				</div>
-
-				<!-- MITES -->
-				<div class="card p-5">
-					<h3 class="text-xl accent">MITES Scholar — MIT ITES</h3>
-					<p class="mt-1 muted text-sm">Jun 2021 – Dec 2021 · Cambridge, MA · Hybrid</p>
-					<p class="mt-3" style="color: var(--text);">Selected for MIT Introduction to Technology, Engineering, and Science (MITES), a rigorous STEM enrichment program. Completed coursework in engineering design, data visualization, and computer-aided design while collaborating with peers on technical projects.</p>
-					<ul class="exp-list mt-3 text-sm">
-						<li>Completed intensive coursework in engineering fundamentals and computational methods</li>
-						<li>Built projects involving data visualization and CAD modeling</li>
-						<li>Collaborated with a cohort of students on design challenges and technical presentations</li>
-					</ul>
-					<div class="mt-3 flex flex-wrap gap-2">
-						<span class="tag">Data Visualization</span>
-						<span class="tag">CAD</span>
-						<span class="tag">Engineering Design</span>
-					</div>
-				</div>
+					<p class="mt-1 muted text-sm">Embedded Hardware & Firmware · Rehab Device for Parkinson's · May – Aug 2025</p>
+				</a>
 			</div>
-
-			<!-- Education -->
-			<div class="mt-10">
-				<h3 class="text-xl prompt">education</h3>
-				<div class="mt-4 card p-5">
-					<h4 class="text-xl accent">University of Michigan College of Engineering</h4>
-					<p class="mt-1 muted text-sm">Bachelor of Science in Engineering — Computer Engineering · Aug 2022 – Dec 2025</p>
-					<p class="mt-3" style="color: var(--text);">Concentrated coursework in embedded systems, computer architecture, computer vision, and signal processing. Completed hands-on projects in firmware development, PCB design, and precision agriculture.</p>
-				</div>
+			<div class="mt-4">
+				<a href="experience.html" class="accent text-sm">-> view all experience</a>
 			</div>
 		</section>
 
-		<!-- ======================== PROJECTS ======================== -->
-		<section id="projects" class="mt-20">
-			<h2 class="text-2xl prompt">projects</h2>
-			<div class="mt-6 grid gap-6">
-				<!-- Smart Watering System -->
-				<div class="card p-5">
-					<h3 class="text-xl accent">Smart Watering System for Microgreens</h3>
-					<p class="mt-1 muted text-sm">Aug 2024 – Dec 2024 · University of Michigan</p>
-					<p class="mt-3" style="color: var(--text);">Developed a precision agriculture system for microgreen cultivation that optimized water usage by up to 30%. Built around an STM32 microcontroller coordinating soil moisture sensing, XY-plotter movement, and targeted irrigation for sustainable urban farming.</p>
-					<ul class="exp-list mt-3 text-sm">
-						<li>Designed firmware on STM32 to coordinate real-time sensor reads and motor control</li>
-						<li>Integrated capacitive soil moisture sensors with calibrated thresholds for per-zone irrigation</li>
-						<li>Built an XY-plotter mechanism for targeted watering of individual microgreen trays</li>
-						<li>Implemented a touchscreen UI using TouchGFX for manual overrides and system monitoring</li>
-						<li>Achieved up to 30% reduction in water consumption compared to manual watering methods</li>
-					</ul>
-					<div class="mt-3 flex flex-wrap gap-2">
-						<span class="tag">STM32</span>
-						<span class="tag">C</span>
-						<span class="tag">TouchGFX</span>
-						<span class="tag">SPI</span>
-						<span class="tag">Soil Sensors</span>
-						<span class="tag">Motor Control</span>
-					</div>
-				</div>
-
-				<!-- Precision Irrigation Rover -->
-				<div class="card p-5">
-					<h3 class="text-xl accent">Precision Irrigation Rover (PIR)</h3>
-					<p class="mt-1 muted text-sm">Jan 2023 – Apr 2023 · University of Michigan</p>
-					<p class="mt-3" style="color: var(--text);">Designed and developed an autonomous irrigation rover using a microcontroller-based system for real-time soil condition monitoring and precision watering. Built to reduce water usage by up to 30% and enhance sustainability through data-driven irrigation decisions in small to mid-sized farms.</p>
-					<ul class="exp-list mt-3 text-sm">
-						<li>Programmed Arduino-based control system with line-following navigation algorithms</li>
-						<li>Integrated ultrasonic sensors for obstacle detection and path planning</li>
-						<li>Implemented real-time soil moisture sensing to trigger irrigation only when needed</li>
-						<li>Designed the rover chassis and mechanical systems using SOLIDWORKS CAD</li>
-						<li>Applied OpenCV for visual processing and navigation assistance</li>
-					</ul>
-					<div class="mt-3 flex flex-wrap gap-2">
-						<span class="tag">Arduino</span>
-						<span class="tag">C++</span>
-						<span class="tag">OpenCV</span>
-						<span class="tag">SOLIDWORKS</span>
-						<span class="tag">Ultrasonics</span>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- ======================== COURSEWORK ======================== -->
-		<section id="coursework" class="mt-20">
-			<h2 class="text-2xl prompt">coursework</h2>
-			<p class="mt-2 muted">University of Michigan College of Engineering</p>
-
-			<!-- Embedded & Hardware -->
-			<div class="mt-8">
-				<h3 class="text-lg prompt">embedded & hardware</h3>
-				<div class="mt-4 grid gap-3">
-					<div class="card course-item">
-						<p class="course-code">EECS 473</p>
-						<p class="course-name">Advanced Embedded System Design</p>
-						<p class="course-desc mt-1">Full-stack embedded system development including custom PCB design, sensor and actuator interfacing, real-time scheduling, and integration testing for complex embedded platforms.</p>
-					</div>
-					<div class="card course-item">
-						<p class="course-code">EECS 373</p>
-						<p class="course-name">Embedded System Design</p>
-						<p class="course-desc mt-1">ARM Cortex-M microcontroller programming, memory-mapped I/O, interrupt handling, timers, and bare-metal firmware development with serial communication protocols.</p>
-					</div>
-					<div class="card course-item">
-						<p class="course-code">EECS 471</p>
-						<p class="course-name">Applied GPU Programming</p>
-						<p class="course-desc mt-1">Parallel computation on GPUs using CUDA. GPU architecture, memory hierarchy optimization, and parallel algorithm design for compute-intensive applications.</p>
-					</div>
-					<div class="card course-item">
-						<p class="course-code">EECS 215</p>
-						<p class="course-name">Electronic Circuits</p>
-						<p class="course-desc mt-1">Analysis and design of analog and digital circuits including diodes, transistors, operational amplifiers, and frequency response characterization.</p>
-					</div>
-				</div>
-			</div>
-
-			<!-- Systems & Software -->
-			<div class="mt-8">
-				<h3 class="text-lg prompt">systems & software</h3>
-				<div class="mt-4 grid gap-3">
-					<div class="card course-item">
-						<p class="course-code">EECS 370</p>
-						<p class="course-name">Computer Organization</p>
-						<p class="course-desc mt-1">Instruction set architecture, processor datapath and control, pipelining, cache memory, virtual memory, and assembly language programming.</p>
-					</div>
-					<div class="card course-item">
-						<p class="course-code">EECS 281</p>
-						<p class="course-name">Data Structures and Algorithms</p>
-						<p class="course-desc mt-1">Complexity analysis, trees, hash tables, graphs, sorting algorithms, dynamic programming, and greedy algorithms for efficient problem solving.</p>
-					</div>
-					<div class="card course-item">
-						<p class="course-code">EECS 388</p>
-						<p class="course-name">Computer Security</p>
-						<p class="course-desc mt-1">Principles of computer and network security, cryptographic protocols, web security, software vulnerabilities, and threat modeling.</p>
-					</div>
-				</div>
-			</div>
-
-			<!-- Signal & Vision -->
-			<div class="mt-8">
-				<h3 class="text-lg prompt">signal & vision</h3>
-				<div class="mt-4 grid gap-3">
-					<div class="card course-item">
-						<p class="course-code">EECS 442</p>
-						<p class="course-name">Computer Vision</p>
-						<p class="course-desc mt-1">Image formation, feature detection, stereo vision, object recognition, motion analysis, and deep learning approaches for visual understanding.</p>
-					</div>
-					<div class="card course-item">
-						<p class="course-code">EECS 216</p>
-						<p class="course-name">Signal Processing</p>
-						<p class="course-desc mt-1">Continuous and discrete-time signals, Fourier analysis, filtering, sampling theorem, and modulation techniques for signal analysis.</p>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- ======================== LINKS ======================== -->
-		<section class="mt-20">
+		<!-- Links -->
+		<section class="mt-14">
 			<h2 class="text-2xl prompt">links</h2>
 			<div class="mt-4 flex flex-col gap-2">
 				<a href="https://www.linkedin.com/in/mohamad-ali-soueidan" target="_blank" rel="noopener" class="accent">-> linkedin</a>

@@ -49,10 +49,6 @@ body::after {
     z-index: 9999;
 }
 
-/* Smooth scrolling for anchor nav */
-html { scroll-behavior: smooth; }
-section[id] { scroll-margin-top: 3.5rem; }
-
 /* Colors */
 .accent { color: var(--accent); }
 .muted { color: var(--muted); }
