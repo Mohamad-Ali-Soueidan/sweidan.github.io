@@ -10,6 +10,14 @@ navToggle?.addEventListener('click', () => {
     navToggle.textContent = mobileMenu?.classList.contains('hidden') ? '[menu]' : '[close]';
 });
 
+// Close mobile menu when clicking an anchor link
+mobileMenu?.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        navToggle.textContent = '[menu]';
+    });
+});
+
 // Theme — auto-detect by time, allow manual override
 function getTimeBasedTheme() {
     const hour = new Date().getHours();

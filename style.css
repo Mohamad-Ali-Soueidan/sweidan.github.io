@@ -49,20 +49,9 @@ body::after {
     z-index: 9999;
 }
 
-/* Blinking cursor */
-@keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
-}
-.cursor {
-    display: inline-block;
-    width: 0.55em;
-    height: 1.1em;
-    background-color: var(--accent);
-    animation: blink 1s step-end infinite;
-    vertical-align: text-bottom;
-    margin-left: 2px;
-}
+/* Smooth scrolling for anchor nav */
+html { scroll-behavior: smooth; }
+section[id] { scroll-margin-top: 3.5rem; }
 
 /* Colors */
 .accent { color: var(--accent); }
